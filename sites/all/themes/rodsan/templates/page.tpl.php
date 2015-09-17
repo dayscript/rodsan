@@ -175,11 +175,14 @@
   <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->
     <section class="row l-footer-columns">
+
+      <div class="footer-first-wrapper">
       <?php if (!empty($page['footer_secondcolumn'])): ?>
         <div class="footer-second medium-3 columns">
           <?php print render($page['footer_secondcolumn']); ?>
         </div>
       <?php endif; ?>
+      </div>
       <?php if (!empty($page['footer_thirdcolumn'])): ?>
         <div class="footer-third medium-3 columns">
           <?php print render($page['footer_thirdcolumn']); ?>
@@ -195,13 +198,11 @@
   <?php endif; ?>
 
   <!--.l-footer -->
-  <div class="footer-first-wrapper">
     <?php if (!empty($page['footer_firstcolumn'])): ?>
       <div class="footer-first medium-3 columns">
         <?php print render($page['footer_firstcolumn']); ?>
       </div>
     <?php endif; ?>
-  </div>
 
 
   <div class="footer-wrapper">
