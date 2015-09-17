@@ -1,1 +1,6 @@
 // Non-modular or client styles for .l-footer region.
+.footer-wrapper{
+  background: $dark-blue;
+  color: white;
+  padding: $column-gutter/2 0;
+}
