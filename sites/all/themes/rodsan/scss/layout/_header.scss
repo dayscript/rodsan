@@ -1,5 +1,11 @@
 .featured-wrapper {
   background-color: #2b77b0;
-  background-image: url("../images/rodsan-bienvenidos.jpg") center top;
+  background-image: url("../images/rodsan-bienvenidos.jpg");
+  background-position: center;
   height: 204px;
+  table {
+    background: none;
+    margin-bottom: 0.25rem;
+    border: none;
+  }
 }

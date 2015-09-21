@@ -86,7 +86,7 @@
 </div>
   <div class="highlighted-wrapper">
     <?php if (!empty($page['highlighted'])): ?>
-      <div class="highlight panel callout">
+      <div class="highlight">
         <?php print render($page['highlighted']); ?>
       </div>
     <?php endif; ?>
