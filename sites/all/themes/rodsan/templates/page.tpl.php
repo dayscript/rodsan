@@ -111,15 +111,32 @@
     </section>
     <!--/.l-help -->
   <?php endif; ?>
-
+  <div class="breadcrumb-wrapper">
+    <div class="row">
+      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+    </div>
+  </div>
   <!--.l-main -->
+  <?php if (!empty($page['triptych_first']) || !empty($page['triptych_last'])): ?>
+    <!--.triptych-->
+    <section class="l-triptych row">
+      <div class="triptych-first medium-8 columns">
+        <?php print render($page['triptych_first']); ?>
+      </div>
+
+      <div class="triptych-last medium-4 columns">
+        <?php print render($page['triptych_last']); ?>
+      </div>
+    </section>
+    <!--/.triptych -->
+  <?php endif; ?>
+
+
   <main role="main" class="row l-main">
     <!-- .l-main region -->
     <div class="<?php print $main_grid; ?> main columns">
 
       <a id="main-content"></a>
-
-      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
 
       <?php if ($title): ?>
         <?php print render($title_prefix); ?>
@@ -137,6 +154,9 @@
           <?php print render($action_links); ?>
         </ul>
       <?php endif; ?>
+
+
+
 
       <?php print render($page['content']); ?>
     </div>
@@ -156,53 +176,40 @@
   </main>
   <!--/.l-main -->
 
-  <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
-    <!--.triptych-->
-    <section class="l-triptych row">
-      <div class="triptych-first medium-4 columns">
-        <?php print render($page['triptych_first']); ?>
-      </div>
-      <div class="triptych-middle medium-4 columns">
-        <?php print render($page['triptych_middle']); ?>
-      </div>
-      <div class="triptych-last medium-4 columns">
-        <?php print render($page['triptych_last']); ?>
-      </div>
-    </section>
-    <!--/.triptych -->
-  <?php endif; ?>
 
-  <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
+
+
+
+  <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn'])  || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->
     <section class="row l-footer-columns">
 
-      <div class="footer-first-wrapper">
       <?php if (!empty($page['footer_secondcolumn'])): ?>
-        <div class="footer-second medium-3 columns">
+        <div class="footer-second medium-8 columns">
           <?php print render($page['footer_secondcolumn']); ?>
         </div>
       <?php endif; ?>
-      </div>
-      <?php if (!empty($page['footer_thirdcolumn'])): ?>
-        <div class="footer-third medium-3 columns">
-          <?php print render($page['footer_thirdcolumn']); ?>
-        </div>
-      <?php endif; ?>
+
+
       <?php if (!empty($page['footer_fourthcolumn'])): ?>
-        <div class="footer-fourth medium-3 columns">
+        <div class="footer-fourth medium-4 columns">
           <?php print render($page['footer_fourthcolumn']); ?>
         </div>
       <?php endif; ?>
     </section>
-    <!--/.footer-columns-->
+    <!--/.footer-columns--->
   <?php endif; ?>
 
+
   <!--.l-footer -->
+  <div class="footer-first-wrapper">
+    <footer class="l-footer row" role="contentinfo">
     <?php if (!empty($page['footer_firstcolumn'])): ?>
-      <div class="footer-first medium-3 columns">
+      <div class="footer-first medium-12 columns">
         <?php print render($page['footer_firstcolumn']); ?>
       </div>
     <?php endif; ?>
+  </div>
 
 
   <div class="footer-wrapper">
