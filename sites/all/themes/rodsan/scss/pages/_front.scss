@@ -5,7 +5,7 @@
 .views-field-body{
   position: absolute;
   top: 60px;
-  @media screen and (max-width: 68em) {
+  @media screen and (max-width: 1100px) {
       top: 20px;
     }
   .field-content{
@@ -19,4 +19,4 @@
     }
   }
 }
-} 
+}
