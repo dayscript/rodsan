@@ -1,0 +1,185 @@
+// Menu principal
+
+.sf-main-menu {
+  margin-top: 42px;
+  float: right;
+  li{
+    padding: 0 0 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    a{
+      color: $gray;
+      font-family: $font-title;
+      &:hover{
+        color: $green;
+      }
+    }
+    ul {
+      background: $green;
+      border-radius: 0px 0px 8px 8px;
+      color: $white;
+      margin-top: 3px;
+      padding-top: 16px;
+    }
+  }
+  .sf-depth-1 {
+    .active {
+      background-color: $green;
+      border-radius: 6px;
+      padding: 6px;
+      color: $white;
+      margin-top: -6px; //corrige la diferencia de alturas por el padding
+  }
+    // Menu desplegable
+    .sf-depth-2 {
+      padding: 6px 0px;
+      a {
+        color: $white;
+        padding-left:20px ;
+        font-size: 13px;
+        text-rendering: optimizeLegibility;
+        font-family: $font-sans;
+        text-transform: none;
+        &:hover {
+          background-color: $dark-green;
+        }
+
+      }
+    }
+  }
+
+}
+
+//Submenu interno
+.submenu-interno,
+.submenu-rodsan{
+  ul {
+    list-style: none;
+    margin-left: 0px;
+    display: block;
+    li{
+      font-family: $font-sans;
+      font-size: 13px;
+      line-height: 20px;
+      padding: 10px 0px;
+      border-bottom: 1px solid #e4e4e4;
+
+      a{
+        color:$light-blue;
+        &:hover{
+          color: $green;
+        }
+      }
+      .active{
+        background-color:$green;
+        color:$white;
+        display: block;
+        padding: 20px 0px 12px 7px
+      }
+    }
+  }
+}
+
+//Menu responsive
+
+.responsive-menus.responsified {
+  clear: both;
+  width: 100%;
+}
+
+.responsive-menus.responsified span.toggler {
+  padding: 5px;
+  display: block;
+  background: $light-blue;
+  color: #fff;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #fff;
+  font-size: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.responsive-menus.responsified.responsive-toggled span.toggler {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #bbb;
+}
+
+.responsive-menus.responsified .responsive-menus-simple {
+  display: none;
+  width: 100%;
+  background: $dark-blue;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  box-shadow: 0px 0px 0px #fff;
+}
+
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple,
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.responsive-menus.responsified.responsive-toggled.absolute {
+  position: relative;
+  z-index: 999;
+}
+
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+  position: absolute;
+  z-index: 999;
+  top: auto;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style: none;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li a {
+  color: #fff;
+  display: block;
+  padding: 1em 5%;
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.responsive-menus.responsified .responsive-menus-simple>li.last a {
+  border-bottom: none;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul li a {
+  padding: 1em 0 1em 10%;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul li ul li a {
+  padding: 1em 0 1em 15%;
+  font-size: 13px;
+  text-transform: none;
+  font-family: $font-sans;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul {
+  display: block !important;
+  visibility: visible !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Inactive rule */
+.responsive-menus span.toggler {
+  display: none;
+}

@@ -1,0 +1,81 @@
+.section-productos, {
+  .views-field-field-nombre-largo{
+    font-family: $font-bigtitle;
+    font-size: 50px;
+    color:$white;
+    text-transform: uppercase;
+    line-height: 46px;
+    margin-bottom: 6px;
+    padding-top: 17px;
+    margin-left: 10px;
+  }
+  .views-field-field-subtitulo{
+    font-family: $font-sans;
+    font-size: 18px;
+    color:$light-blue;
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+  .taxonomy-term-description{
+  border-bottom: 3px solid #5bb531;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  }
+  .views-field-field-imagen-encabezado {
+    float: right;
+    position: relative;
+    bottom: 25px;
+  }
+
+  .node-seguro{
+    display: inline-block;border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    .image{
+      float: left;
+      margin-right: 24px;
+      margin-bottom:12px;
+    }
+  }
+}
+//Detalle de producto
+.group-content,
+{
+  .field-label{
+    font-family: $font-title;
+    font-size: 20px;
+    color:$green;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .product-title{
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .field-name-field-subtitulo{
+    font-family: $font-sans;
+    font-size: 16px;
+    color:$light-blue;
+    margin-bottom: 18px;
+  }
+  .field-name-field-coberturas{
+    ul{
+    font-family: $font-sans;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+    }
+  }
+  .field-name-field-adjuntos {
+    span.file {
+      display: block;
+      padding: 10px 0px;
+      border-bottom: 1px solid #e4e4e4;
+      .file-size{
+        display: none;
+      }
+    }
+  }
+  }

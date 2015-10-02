@@ -1,0 +1,94 @@
+//slide productos home
+
+.view-header {
+  display:block;
+  @media screen and (max-width:40em) {
+    display: none;
+  }
+}
+
+.view-slide-seguros-home {
+  margin-top: 55px;
+  @media screen and (max-width: 40em) {
+    margin-top: 0px;
+  }
+  .view-header {
+    text-align: center;
+    margin-bottom: 24px;
+    @media screen and (max-width: 40em) {
+      margin-bottom: 0px;
+    }
+  }
+  .views-slideshow-controls-top {
+    margin-bottom: 24px;
+    @media screen and (max-width: 40em) {
+      margin-bottom: 0px;
+    }
+    .views-content-name {
+      padding: 0 20px;
+      font-size: 17px;
+      text-transform: uppercase;
+      display: inline-block;
+      color: $gray;
+      font-family: $font-title;
+      @media screen and (max-width: 40em) {
+        display: none;
+      }
+    }
+  }
+  #views_slideshow_cycle_main_slide_seguros_home-block {
+    background-color: $light-blue;
+    margin-bottom: 60px;
+    text-align: center;
+    display: block;
+    @media screen and (max-width: 40em) {
+      margin-bottom: 20px;
+      top: -24px;
+    }
+    .views-field-name {
+      display: none;
+    }
+    .big-title-white {
+      color: $white;
+      padding-top: 80px;
+      @media screen and (max-width: 40em) {
+        font-size: 30px;
+        line-height: 34px;
+        padding-top: 10px;
+      }
+    }
+    .views-field-field-subtitulo {
+      color: $white;
+      font-size: 16px;
+      font-family: $font-sans;
+      margin-bottom: 24px;
+      @media screen and (max-width: 40em) {
+        margin-bottom: 10px;
+      }
+    }
+    .views-field.views-field-field-image {
+      float: right;
+      padding: 0;
+      margin: 0;
+      @media screen and (max-width:40em) {
+      margin-bottom: 10px;
+    }
+    }
+    .views-field-description {
+      color: $white;
+    }
+
+  }
+  .views-slideshow-pager-field-item.views_slideshow_pager_field_item.active {
+    background-color: $green;
+    padding: 6px;
+    display: inline-block;
+    border-radius: 6px;
+    @media screen and (max-width: 40em) {
+      display: none;
+    }
+    .views-content-name {
+      color: $white;
+    }
+  }
+}

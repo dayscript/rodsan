@@ -1,15 +1,23 @@
 @font-face {
   font-family: 'segoeuisl';
-  src: url('fonts/segoe/segoeuisl.eot');
-  src: local('☺'), url('fonts/segoe/segoeuisl.woff') format('woff'), url('fonts/segoe/segoeuisl.ttf') format('truetype'), url('fonts/segoe/segoeuisl.svg') format('svg');
+  src: url('../fonts/segoe/segoeuisl.eot');
+  src: local('☺'), url('../fonts/segoe/segoeuisl.woff') format('woff'), url('../fonts/segoe/segoeuisl.ttf') format('truetype'), url('../fonts/segoe/segoeuisl.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'segoeuil';
-  src: url('fonts/segoe/segoeuil.eot');
-  src: local('☺'), url('fonts/segoe/segoeuil.woff') format('woff'), url('fonts/segoe/segoeuil.ttf') format('truetype'), url('fonts/segoe/segoeuil.svg') format('svg');
+  src: url('../fonts/segoe/segoeuil.eot');
+  src: local('☺'), url('../fonts/segoe/segoeuil.woff') format('woff'), url('../fonts/segoe/segoeuil.ttf') format('truetype'), url('../fonts/segoe/segoeuil.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url('OpenSans.eot') format('embedded-opentype');
+  src: local('☺'), url('../fonts/opensans/opensans-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

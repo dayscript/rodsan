@@ -1,11 +1,25 @@
 .featured-wrapper {
-  background-color: #2b77b0;
-  background-image: url("../images/rodsan-bienvenidos.jpg");
-  background-position: center;
-  height: 204px;
-  table {
-    background: none;
-    margin-bottom: 0.25rem;
-    border: none;
+  margin-bottom:12px;
+  background-color: $dark-blue;
+  border-top: 3px solid $light-blue;
+  @media screen and (max-width:40em) {
+    margin-bottom: 0px;
+  }
+  .section.l-featured.row {
+    .columns{
+      padding: 0;
+    }
   }
 }
+
+.l-header {
+  margin:0;
+  padding: 20px 0;
+}
+.l-featured{
+  padding: 0;
+  .columns{
+    padding: 0;
+  }
+}
+

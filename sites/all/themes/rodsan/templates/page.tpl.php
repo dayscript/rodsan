@@ -84,6 +84,7 @@
     <!--/.l-featured -->
   <?php endif; ?>
 </div>
+
   <div class="highlighted-wrapper">
     <?php if (!empty($page['highlighted'])): ?>
       <div class="highlight">
@@ -112,7 +113,7 @@
     <!--/.l-help -->
   <?php endif; ?>
   <div class="breadcrumb-wrapper">
-    <div class="row">
+    <div class="row show-for-large-up">
       <?php if ($breadcrumb): print $breadcrumb; endif; ?>
     </div>
   </div>
@@ -167,6 +168,8 @@
         <?php print render($page['sidebar_first']); ?>
       </aside>
     <?php endif; ?>
+
+
 
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar">

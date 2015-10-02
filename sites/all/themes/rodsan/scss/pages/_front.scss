@@ -1,0 +1,19 @@
+.front section.l-featured.row{
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+.views-field-body{
+  position: absolute;
+  top: 60px;
+  .field-content{
+    p{
+      font-family: $font-bigtitle;
+      font-size: 26px;
+      color:$white;
+      text-transform: uppercase;
+      line-height: 28px;
+      margin-left: -66px;
+    }
+  }
+}
+}
