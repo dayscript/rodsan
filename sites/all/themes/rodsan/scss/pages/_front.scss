@@ -5,6 +5,10 @@
 .views-field-body{
   position: absolute;
   top: 60px;
+  @media screen and (max-width: 68em) {
+    h1{
+      top: 20px;
+    }
   .field-content{
     p{
       font-family: $font-bigtitle;
