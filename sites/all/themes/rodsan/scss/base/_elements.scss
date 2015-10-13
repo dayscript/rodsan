@@ -10,7 +10,7 @@
 body {
   @include font_body();
   color: $dark-gray;
-  p {
+  p,li {
     font-family: $font-sans;
     font-weight: normal;
     font-size: 13px;
