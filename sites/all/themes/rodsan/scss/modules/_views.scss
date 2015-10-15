@@ -53,17 +53,17 @@
       @media #{$small-up} {
         font-size: 30px;
         line-height: 34px;
-        padding-top: 10px;
+        padding-top: 20px;
       }
       @media #{$medium-up} {
         font-size: 34px;
         line-height: 38px;
         padding-top: 10px;
       }
-      @media #{$large-up} {
+      @media #{$large-only} {
         font-style: 34px;
         line-height: 42px;
-        padding-top: 80px;
+        padding-top: 60px;
       }
       @media #{$xlarge-up} {
         padding-top: 80px;
