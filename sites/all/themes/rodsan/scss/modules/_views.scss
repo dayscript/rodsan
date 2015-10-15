@@ -97,6 +97,7 @@
     padding: 6px;
     display: inline-block;
     border-radius: 6px;
+    .pointer{cursor:pointer;}
     @media screen and (max-width: 40em) {
       display: none;
     }
