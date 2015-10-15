@@ -76,16 +76,19 @@
       }
     }
     .views-field.views-field-field-image {
-        float: right;
-        padding: 0;
-        margin: 0;
+      .field-content {
+        img {
+          display: block;
+          vertical-align: middle;
+          float: right;
+        }
+      }
+
       @media screen and (max-width:40em) {
       margin-bottom: 10px;
     }
     }
-    .field-content {
-      float: right;
-    }
+
     .views-field-description {
       color: $white;
       padding: 0 40px;
