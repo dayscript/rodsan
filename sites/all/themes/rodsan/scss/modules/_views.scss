@@ -83,16 +83,12 @@
       margin-bottom: 10px;
     }
     }
-    .field-content {
-      img {
-        display: block;
-        vertical-align: middle;
-        float: right;
-      }
-    }
     .views-field-description {
       color: $white;
       padding: 0 40px;
+    }
+    .columns{
+      padding: 0;
     }
 
   }
