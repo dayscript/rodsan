@@ -78,12 +78,15 @@
         margin-bottom: 6px;
       }
     }
-    .views-field.views-field-field-image, .views-field.views-field-field-image-1, .views-field.views-field-field-image-2 {
+    .views-field{
+
+    .views-field-field-image,.views-field-field-image-1,.views-field-field-image-2 {
       float: right;
       padding: 0;
       margin: 0;
       @media screen and (max-width:40em) {
       margin-bottom: 10px;
+    }
     }
     }
     .views-field-description {
