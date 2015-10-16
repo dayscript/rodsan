@@ -31,8 +31,11 @@
       display: inline-block;
       color: $gray;
       font-family: $font-title;
-      @media screen and (max-width: 40em) {
+      @media #{$small-only} {
         display: none;
+      }
+      @media #{$medium-only} {
+        font-size: 14px;
       }
     }
   }
