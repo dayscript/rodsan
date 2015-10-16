@@ -54,7 +54,7 @@
         line-height: 34px;
         padding-top: 30px;
       }
-      @media #{$medium-up} {
+      @media #{$medium-only} {
         font-size: 26px;
         line-height: 38px;
         padding-top: 20px;
