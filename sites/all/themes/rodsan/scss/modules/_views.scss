@@ -78,16 +78,9 @@
         margin-bottom: 6px;
       }
     }
-    .views-field{
-    .views-field-field-image{
+    .views-field.views-field-field-image {
       float: right;
-      .field-content{
-        float: right;
-      }
-      @media screen and (max-width:40em) {
-      margin-bottom: 10px;
-    }
-    }
+      padding: 0;
     }
 
     .views-field-description {
