@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef98827e-e1fe-4389-bd83-7dd837b64106" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/rodsan/css/rodsan.css" afterPath="$PROJECT_DIR$/sites/all/themes/rodsan/css/rodsan.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="566ee061-6543-46a1-bbdb-774626f7cb2b" name="New changelist" comment="" />
@@ -505,12 +504,6 @@
       <option name="number" value="Default" />
       <updated>1442350675757</updated>
     </task>
-    <task id="LOCAL-00065" summary="menu_attributes module">
-      <created>1445018595010</created>
-      <option name="number" value="00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1445018595010</updated>
-    </task>
     <task id="LOCAL-00066" summary="menu_attributes module">
       <created>1445018799758</created>
       <option name="number" value="00066" />
@@ -799,7 +792,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445379842332</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="menu_attributes module">
+      <created>1445379997645</created>
+      <option name="number" value="00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1445379997645</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="ToolWindowManager">
