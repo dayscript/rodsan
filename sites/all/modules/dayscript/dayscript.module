@@ -62,8 +62,8 @@ ini_set('display_errors', '1');
 			  ->execute();
 			
 			$cont =0;
-			dpm($query);
-			dpm($query->ordered_results[0]->entity_id);
+			//dpm($query);
+			//dpm($query->ordered_results[0]->entity_id);
 			$dataNid =array();
 			
 			foreach($query->ordered_results as $node_id){
