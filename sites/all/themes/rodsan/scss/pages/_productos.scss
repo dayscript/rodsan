@@ -39,7 +39,7 @@
     .field.field-name-title {
       display: block;
       @media #{$medium-only} {
-        display: inline-block;
+        display: inherit;
       }
     }
   }
