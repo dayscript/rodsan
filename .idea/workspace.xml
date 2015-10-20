@@ -41,8 +41,8 @@
       <file leaf-file-name="dayscript.module" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/dayscript/dayscript.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0091324">
-              <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+            <state vertical-scroll-proportion="1.1141553">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -592,12 +592,6 @@
       <option name="number" value="Default" />
       <updated>1442350675757</updated>
     </task>
-    <task id="LOCAL-00059" summary="menu_attributes module">
-      <created>1445013582697</created>
-      <option name="number" value="00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1445013582697</updated>
-    </task>
     <task id="LOCAL-00060" summary="menu_attributes module">
       <created>1445013739402</created>
       <option name="number" value="00060" />
@@ -886,7 +880,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445378801723</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="menu_attributes module">
+      <created>1445379013286</created>
+      <option name="number" value="00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1445379013287</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1297,8 +1297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/dayscript/dayscript.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0091324">
-          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+        <state vertical-scroll-proportion="1.1141553">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
