@@ -225,6 +225,10 @@
 
 /*Bloque de indicadores*/
 
+.reveal-modal{
+         z-index: 9910;
+      }
+
 .widget-indicadores{
   .indicadores-block{
     display: inline-block;
@@ -263,6 +267,7 @@
       .left{
         text-align: left;
       }
+      
       
     }
   }
