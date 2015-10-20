@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
@@ -83,7 +83,7 @@ ini_set('display_errors', '1');
 		
 
 	}
-=======
+
 <?php
 /*error_reporting(E_ALL);
 ini_set('display_errors', '1');
@@ -166,4 +166,4 @@ ini_set('display_errors', '1');
 	 		$form['submitted']['aseguradora']['#options'] = $dataNid;
 	 	}
 	}	
->>>>>>> 4ba788c41a2239a42459589ea3c2ee9482c6a785
+
