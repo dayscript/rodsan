@@ -36,12 +36,6 @@
       margin-right: 24px;
       margin-bottom:12px;
     }
-    .field.field-name-title {
-      display: block;
-      @media #{$medium-only} {
-        display: inherit;
-      }
-    }
   }
 }
 //Detalle de producto
