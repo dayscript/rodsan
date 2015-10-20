@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef98827e-e1fe-4389-bd83-7dd837b64106" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/rodsan/scss/modules/_block.scss" afterPath="$PROJECT_DIR$/sites/all/themes/rodsan/scss/modules/_block.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/rodsan/js/_rodsan.js" afterPath="$PROJECT_DIR$/sites/all/themes/rodsan/js/_rodsan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss" afterPath="$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/rodsan/css/rodsan.css" afterPath="$PROJECT_DIR$/sites/all/themes/rodsan/css/rodsan.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="566ee061-6543-46a1-bbdb-774626f7cb2b" name="New changelist" comment="" />
@@ -29,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_actualidad.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_actualidad.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.75">
-              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.5022831">
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -71,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_block.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_block.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/rodsan/scss/modules/_block.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5707763">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state vertical-scroll-proportion="90.75">
+              <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -128,11 +128,11 @@
         <option value="$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_front.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/rodsan/scss/modules/_views.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_productos.scss" />
-        <option value="$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss" />
         <option value="$PROJECT_DIR$/sites/all/modules/dayscript/dayscript.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/dayscript/templates/indicadores.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/rodsan/js/_rodsan.js" />
         <option value="$PROJECT_DIR$/sites/all/themes/rodsan/scss/modules/_block.scss" />
+        <option value="$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss" />
       </list>
     </option>
   </component>
@@ -506,12 +506,6 @@
       <option name="number" value="Default" />
       <updated>1442350675757</updated>
     </task>
-    <task id="LOCAL-00062" summary="menu_attributes module">
-      <created>1445014900800</created>
-      <option name="number" value="00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1445014900800</updated>
-    </task>
     <task id="LOCAL-00063" summary="menu_attributes module">
       <created>1445014951307</created>
       <option name="number" value="00063" />
@@ -800,7 +794,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445379385606</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="menu_attributes module">
+      <created>1445379549329</created>
+      <option name="number" value="00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1445379549329</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1179,14 +1179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.75">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/dayscript/dayscript.module">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-30.5">
@@ -1215,8 +1207,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/rodsan/scss/modules/_block.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5707763">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state vertical-scroll-proportion="90.75">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5022831">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding />
         </state>
       </provider>
