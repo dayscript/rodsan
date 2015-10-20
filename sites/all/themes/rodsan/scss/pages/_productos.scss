@@ -35,6 +35,9 @@
       float: left;
       margin-right: 24px;
       margin-bottom:12px;
+      @media #{$medium-only} {
+        margin-right: 44px;
+      }
     }
   }
 }
