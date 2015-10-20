@@ -35,13 +35,6 @@
       float: left;
       margin-right: 24px;
       margin-bottom:12px;
-      .img {
-        width: inherit;
-        @media #{$medium-only} {
-          width: 100%;
-        }
-      }
-
     }
   }
 }
