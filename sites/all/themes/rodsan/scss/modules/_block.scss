@@ -222,3 +222,51 @@
 .block-40 {
   margin-top: -13px;
 }
+
+/*Bloque de indicadores*/
+
+.widget-indicadores{
+  .indicadores-block{
+    display: inline-block;
+    background:#fff;
+    margin: 9px;
+    font-size: 12px;
+    .indicadores-block-content{
+      text-align: right;
+      padding: 15px;
+      padding-bottom:0px;
+      .content{
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #F8F8F8;
+      }
+      .indicadores-name{
+        float: left;
+        width: 50%;
+      }
+      .indicadores-value{
+        float: left;
+        width: 50%;
+        .up-image{
+          background:url(../images/up-image.jpg);
+          width: 8px;
+          height: 8px;
+          display: inline-block;
+        }
+        .down-image{
+          background:url(../images/down-image.jpg);
+          width: 8px;
+          height: 8px;
+          display: inline-block;
+        }
+      }
+      .left{
+        text-align: left;
+      }
+      
+    }
+  }
+
+
+}
+
