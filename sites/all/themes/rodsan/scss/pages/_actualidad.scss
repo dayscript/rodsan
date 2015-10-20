@@ -28,13 +28,6 @@
              color: #999;
         }
 
-         .field-name-field-credito-de-foto-y-noticia{
-          font-size: 13px;
-          font-family: $font-sans;
-          font-style: italic;
-          color: #999;
-          margin-bottom: 10px;
-        }
 
         .body.text-secondary {
           color: $dark-gray;
@@ -59,4 +52,12 @@
   .image {
     margin-bottom: 12px;
   }
+}
+
+.field-name-field-credito-de-foto-y-noticia{
+  font-size: 13px;
+  font-family: $font-sans;
+  font-style: italic;
+  color: #999;
+  margin-bottom: 10px;
 }
