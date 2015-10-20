@@ -9,6 +9,7 @@
                 $('.contacto-footer').on('click', { elem: '.l-footer' }, scrollToElem );
             }
 
+            $('.reveal-modal').foundation('reveal', 'open'); 
 
 
 

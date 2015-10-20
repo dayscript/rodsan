@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
@@ -82,3 +83,87 @@ ini_set('display_errors', '1');
 		
 
 	}
+=======
+<?php
+/*error_reporting(E_ALL);
+ini_set('display_errors', '1');
+/**
+ * Implements hook_block_info().
+ */
+	function dayscript_theme(){
+    $hooks = array();
+    $hooks[ 'indicadores_economicos' ] = array(
+        'variables' => array( 'data' => array() ),
+        'template'  => "templates/indicadores"
+    );
+    return $hooks;
+	}
+	function dayscript_block_info() {
+	  $blocks['indicadores_economicos'] = array(
+	    'info'  => 'indicadores economicos',
+	  );
+	  $blocks['indicadores_popup_confirmation'] = array(
+	    'info'  => 'indicadores economicos confirmacion popup',
+	  );
+	  return $blocks;
+	}
+	function dayscript_block_view($delta='') {
+	  $block = array();
+	  switch ($delta) {
+	  case 'indicadores_economicos':
+	    $block['subject'] = 'indicadores economicos';
+	    $block['content'] = theme( 'indicadores_economicos', array( 'data' => _getIndicadoresEconomicos() ) );
+	    break;
+	  case 'indicadores_popup_confirmation':
+	    $block['subject'] = 'indicadores economicos popup';
+    	$block['content'] =  _indicadoresEconomicosPopupConfirmation();
+	  	break;
+	  }
+	  return $block;
+	}
+	function _getIndicadoresEconomicos() {
+  		$aditionalParameters = "DTF 90 Días,Euro,UVR,TRM";
+		$url="http://190.27.201.2/autocontent/index.php?economy=DTF%2090%20D%C3%ADas,Euro,UVR,TRM&json=json&indicadores=ok";
+		$data=file_get_contents($url);
+  		return $data;
+	}
+
+	function _indicadoresEconomicosPopupConfirmation(){
+		include_once(drupal_get_path('module', 'webform') .'/includes/webform.submissions.inc');
+			$nid = arg(2);
+			$sid = $_GET['sid'];
+			$submission = webform_get_submission($nid, $sid);
+			$query = new EntityFieldQuery();
+						  $entities = $query->entityCondition('entity_type', 'node')
+						  ->propertyCondition('type', 'logo_portafolio')
+						  ->propertyCondition('title',$submission->data[1][0], '=')
+						  ->propertyCondition('status', 1)
+						  ->execute();
+			$node=array_keys($entities['node']);
+			$node = node_load($node[0]);
+			$node_view = node_view($node,$view_mode = 'full');
+			$rendered_node = drupal_render($node_view);
+			return $rendered_node;
+	}
+/**
+ * Implements hook_form_alter().
+ */
+	function dayscript_form_alter(&$form, &$form_state, $form_id)
+	{
+	 	if($form_id == 'webform_client_form_23'){
+	 		$query = new EntityFieldQuery();
+			  $entities = $query->entityCondition('entity_type', 'node')
+			  ->propertyCondition('type', 'logo_portafolio')
+			  ->fieldCondition('field_tipo_de_portafolio', 'tid', array('4'), '=')
+			  ->propertyCondition('status', 1)
+			  ->execute();
+			$cont =0;
+			$dataNid =array();
+			foreach($query->ordered_results as $node_id){
+			   $data=node_load($node_id->entity_id);
+			   $dataNid[$data->title]=$data->title;
+			}
+	 		$form['submitted']['aseguradora']['#options'] = $dataNid;
+	 	}
+	}	
+>>>>>>> 4ba788c41a2239a42459589ea3c2ee9482c6a785

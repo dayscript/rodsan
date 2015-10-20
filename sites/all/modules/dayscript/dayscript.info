@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name = "Dayscript"
 description = "Modifica los formularios WEBFORM"
 core = "7.x"
@@ -8,3 +9,15 @@ core = "7.x"
 project = "dayscript"
 datestamp = "1437725041"
 
+=======
+name = "Dayscript"
+description = "Modifica los formularios WEBFORM"
+core = "7.x"
+package = "Display Suite"
+configure = admin/structure/dayscript
+version = "7.x-1"
+core = "7.x"
+project = "dayscript"
+datestamp = "1437725041"
+
+>>>>>>> 4ba788c41a2239a42459589ea3c2ee9482c6a785
