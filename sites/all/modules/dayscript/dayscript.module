@@ -55,8 +55,6 @@ ini_set('display_errors', '1');
 						  ->propertyCondition('status', 1)
 						  ->execute();
 			$node=array_keys($entities['node']);
-			dpm($node[0]);
-
 			$node = node_load($node[0]);
 			$node_view = node_view($node,$view_mode = 'full');
 			$rendered_node = drupal_render($node_view);
