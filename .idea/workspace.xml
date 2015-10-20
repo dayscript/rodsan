@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef98827e-e1fe-4389-bd83-7dd837b64106" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss" afterPath="$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/rodsan/css/rodsan.css" afterPath="$PROJECT_DIR$/sites/all/themes/rodsan/css/rodsan.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="566ee061-6543-46a1-bbdb-774626f7cb2b" name="New changelist" comment="" />
@@ -31,8 +31,8 @@
       <file leaf-file-name="_actualidad.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8173516">
-              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.70319635">
+              <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -505,12 +505,6 @@
       <option name="number" value="Default" />
       <updated>1442350675757</updated>
     </task>
-    <task id="LOCAL-00064" summary="menu_attributes module">
-      <created>1445017855738</created>
-      <option name="number" value="00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1445017855738</updated>
-    </task>
     <task id="LOCAL-00065" summary="menu_attributes module">
       <created>1445018595010</created>
       <option name="number" value="00065" />
@@ -799,7 +793,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445379638983</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="menu_attributes module">
+      <created>1445379842331</created>
+      <option name="number" value="00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1445379842332</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1214,8 +1214,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/rodsan/scss/pages/_actualidad.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8173516">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.70319635">
+          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
           <folding />
         </state>
       </provider>
