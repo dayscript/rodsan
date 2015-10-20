@@ -47,7 +47,6 @@ ini_set('display_errors', '1');
 			$nid = arg(2);
 			$sid = $_GET['sid'];
 			$submission = webform_get_submission($nid, $sid);
-			dpm($submission->data[1][0]);
 			$query = new EntityFieldQuery();
 						  $entities = $query->entityCondition('entity_type', 'node')
 						  ->propertyCondition('type', 'logo_portafolio')
