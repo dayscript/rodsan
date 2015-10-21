@@ -31,6 +31,7 @@
       display: inline-block;
       color: $gray;
       font-family: $font-title;
+      cursor: pointer;
       @media #{$small-only} {
         display: none;
       }
