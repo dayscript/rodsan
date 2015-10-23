@@ -68,13 +68,13 @@ function _indicadoresEconomicosPopupConfirmation(){
  */
 function dayscript_form_alter(&$form, &$form_state, $form_id)
 {
-	
 	if($form_id == 'webform_client_form_23'){
 		$query = new EntityFieldQuery();
 		$entities = $query->entityCondition('entity_type', 'node')
 			->propertyCondition('type', 'logo_portafolio')
 			->fieldCondition('field_tipo_de_portafolio', 'tid', array('4'), '=')
 			->propertyCondition('status', 1)
+			->propertyOrderBy('title', 'ASC')
 			->execute();
 		$cont =0;
 		$dataNid =array();
@@ -84,7 +84,6 @@ function dayscript_form_alter(&$form, &$form_state, $form_id)
 		}
 		$form['submitted']['aseguradora']['#options'] = $dataNid;
 	}
-
 	if($form_id =="webform_client_form_42"){
 		$term=explode('/',$_GET['q']);
 		$taxonomy_term = taxonomy_term_load($term[2]);
@@ -93,6 +92,7 @@ function dayscript_form_alter(&$form, &$form_state, $form_id)
 			->propertyCondition('type', 'seguro')
 			->fieldCondition('field_tipo_de_seguro', 'tid',$taxonomy_term->tid , '=')
 			->propertyCondition('status', 1)
+			->propertyOrderBy('title', 'ASC')
 			->execute();
 		$entities = array_keys($entities['node']);
 		$nodes = entity_load('node',$entities);
@@ -101,9 +101,7 @@ function dayscript_form_alter(&$form, &$form_state, $form_id)
 			$data[$value->title] = ucfirst(strtolower($value->title));
 		}
 		$form['submitted']['producto']['#options'] = $data;  
-	
 	}
-
 	if($form['#action'] == '/node/42/webform/components/7?destination=node/42/webform' && $form_id = "webform_component_edit_form" 
 		&& $form['#node']->vid == '42') {
 		dpm($form);
@@ -115,8 +113,6 @@ function dayscript_form_alter(&$form, &$form_state, $form_id)
 		}
 		$form['extra']['items']['#default_value'] = $options;
 	}
-
-		
 }
 
 
