@@ -83,5 +83,31 @@ function dayscript_form_alter(&$form, &$form_state, $form_id)
 		}
 		$form['submitted']['aseguradora']['#options'] = $dataNid;
 	}
+
+	if($form_id =="webform_client_form_42"){
+		dpm($form);
+		$term=explode('/',$_GET['q']);
+		$taxonomy_term = taxonomy_term_load($term[2]);
+		$query = new EntityFieldQuery();
+		$entities = $query->entityCondition('entity_type', 'node')
+			->propertyCondition('type', 'seguro')
+			->fieldCondition('field_tipo_de_seguro', 'tid',$taxonomy_term->tid , '=')
+			->propertyCondition('status', 1)
+			->execute();
+		$entities = array_keys($entities['node']);
+		$nodes = entity_load('node',$entities);
+		$data=array();
+		foreach($nodes as $key=>$value){
+			$data[$value->title] = ucfirst(strtolower($value->title));
+		}
+		$form['submitted']['producto']['#options'] = $data;
+	
+	}
+
+		
 }
+
+
+
+
 
