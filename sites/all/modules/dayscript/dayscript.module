@@ -100,7 +100,7 @@ function dayscript_form_alter(&$form, &$form_state, $form_id)
 		foreach($nodes as $key=>$value){
 			$data[$value->title] = ucfirst(strtolower($value->title));
 		}
-		$form['submitted']['producto']['#options'] = $data;
+		$form['submitted']['producto']['#options'] = $data;  
 	
 	}
 
