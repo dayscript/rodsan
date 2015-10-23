@@ -89,8 +89,14 @@ function dayscript_form_alter(&$form, &$form_state, $form_id)
 		
 
 		$term = explode("/",drupal_get_path_alias(current_path()));
+		//dpm($term);
 		if( isset($term[1]) ){
+			if($term[1] == "personas-y-familias");
+				$term[1] = 'Personas y familias';
+			if($term[1] == "autos-soat");
+				$term[1] = 'Autos - SOAT';
 			$taxonomy_term = entity_load('taxonomy_term', FALSE, array('name' => $term[1]));
+			
 			foreach ($taxonomy_term as $key => $value) {
 				$tid=$key;
 			}
