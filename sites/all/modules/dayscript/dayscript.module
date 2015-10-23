@@ -68,6 +68,7 @@ function _indicadoresEconomicosPopupConfirmation(){
  */
 function dayscript_form_alter(&$form, &$form_state, $form_id)
 {
+	
 	if($form_id == 'webform_client_form_23'){
 		$query = new EntityFieldQuery();
 		$entities = $query->entityCondition('entity_type', 'node')
@@ -85,7 +86,6 @@ function dayscript_form_alter(&$form, &$form_state, $form_id)
 	}
 
 	if($form_id =="webform_client_form_42"){
-		dpm($form);
 		$term=explode('/',$_GET['q']);
 		$taxonomy_term = taxonomy_term_load($term[2]);
 		$query = new EntityFieldQuery();
@@ -102,6 +102,18 @@ function dayscript_form_alter(&$form, &$form_state, $form_id)
 		}
 		$form['submitted']['producto']['#options'] = $data;  
 	
+	}
+
+	if($form['#action'] == '/node/42/webform/components/7?destination=node/42/webform' && $form_id = "webform_component_edit_form" 
+		&& $form['#node']->vid == '42') {
+		dpm($form);
+		$vocabulary=taxonomy_vocabulary_machine_name_load('productos');
+		$data = entity_load('taxonomy_term', FALSE, array('vid' => $vocabulary->vid));		
+		$options = "";
+		foreach($data as $key => $term ){
+			$options .= $term->name."|".$term->name."\n"; 
+		}
+		$form['extra']['items']['#default_value'] = $options;
 	}
 
 		
