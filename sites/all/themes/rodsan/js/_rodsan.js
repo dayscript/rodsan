@@ -11,6 +11,12 @@
 
             $('.reveal-modal').foundation('reveal', 'open');
 
+            $('.close').click(function(){
+
+                $('.reveal-modal-bg').css('display','none');
+                $('.reveal-modal').css('display','none');
+
+            }); 
 
 
 
