@@ -3,3 +3,13 @@
     margin-bottom: 12px;
   }
 }
+.field-name-field-adjuntos {
+    span.file {
+      display: block;
+      padding: 10px 0px;
+      border-bottom: 1px solid #e4e4e4;
+      .file-size{
+        display: none;
+      }
+    }
+  }
