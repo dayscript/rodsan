@@ -35,7 +35,8 @@
   }
 
   .node-seguro{
-    display: inline-block;border-bottom: 1px solid #e4e4e4;
+    display: inline-block;
+    border-bottom: 1px solid #e4e4e4;
     margin-bottom: 12px;
     padding-bottom: 12px;
     .image{
@@ -44,7 +45,7 @@
       margin-bottom:12px;
       display: inline-block;
     }
-    .field.field-name-title.field-type-ds.field-label-hidden.field-wrapper {
+    .field.field-name-title{
     display: block;
     float: left;
 }
