@@ -42,7 +42,12 @@
       float: left;
       margin-right: 24px;
       margin-bottom:12px;
+      display: inline-block;
     }
+    .field.field-name-title.field-type-ds.field-label-hidden.field-wrapper {
+    display: block;
+    float: left;
+}
   }
 }
 //Detalle de producto
