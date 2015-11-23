@@ -1,11 +1,14 @@
 <div class="indicadores-block">
 	<div class="indicadores-block-content">
 		<?php $data=json_decode($data);
+		dpm($data);
 
 		foreach ($data as $key => $value) :?>
 			<?php
-			$image = ($value->change_percent < 0) ? "down-image":"up-image";
-
+			$image = "";
+			if($value->change_percent != 'Igual'){
+				$image = ($value->change_percent < 0) ? "down-image":"up-image";
+			}
 			?>
 			<div class="content">
 				<div class="indicadores-name left"><?php print $value->name ?> </div>
@@ -16,7 +19,7 @@
 			</div>
 
 
-			<!--<?php print $value->date?>
+			<!--<?php print $value->date?> 
 	     <?php print $value->short ?>
 	     <?php print $value->value ?>
 	     <?php print $value->unit ?>
