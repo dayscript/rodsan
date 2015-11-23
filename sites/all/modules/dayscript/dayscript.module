@@ -18,6 +18,7 @@ function dayscript_block_info() {
 	);
 	$blocks['indicadores_popup_confirmation'] = array(
 		'info'  => 'indicadores economicos confirmacion popup',
+		'cache' => DRUPAL_NO_CACHE
 	);
 	return $blocks;
 }
