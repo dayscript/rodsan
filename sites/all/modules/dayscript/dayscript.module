@@ -51,6 +51,8 @@ function _indicadoresEconomicosPopupConfirmation(){
 		include_once(drupal_get_path('module', 'webform') .'/includes/webform.submissions.inc');
 		$submission = webform_get_submission($nid, $sid);
 		dpm($submission);
+		var_dump($submission);
+
 		$query = new EntityFieldQuery();
 		$entities = $query->entityCondition('entity_type', 'node')
 			->propertyCondition('type', 'logo_portafolio')
