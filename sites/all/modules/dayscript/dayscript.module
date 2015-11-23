@@ -63,7 +63,7 @@ function _indicadoresEconomicosPopupConfirmation(){
 		return "<div class='reveal-modal'><span class='close'>x</span>".$rendered_node."</div>";
 	}
 }
-/**
+/** 
  * Implements hook_form_alter().
  */
 function dayscript_form_alter(&$form, &$form_state, $form_id)
