@@ -47,7 +47,7 @@ function _indicadoresEconomicosPopupConfirmation(){
 
 		$nid = $_GET['nid'];
 		$sid = $_GET['sid'];
-			watchdog('potentials', 'Nid = '.$nid.''.$sid. );
+		watchdog('potentials', 'Nid = '.$nid.' - '.$sid );
  
 		include_once(drupal_get_path('module', 'webform') .'/includes/webform.submissions.inc');
 		$submission = webform_get_submission($nid, $sid);
