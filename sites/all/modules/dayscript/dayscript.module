@@ -40,7 +40,7 @@ function dayscript_block_view($delta='') {
 }
 function _getIndicadoresEconomicos() {
 	$aditionalParameters = "DTF 90 Días,Euro,UVR,TRM";
-	$url="http://190.27.201.2/autocontent/index.php?economy=DTF%2090%20D%C3%ADas,Euro,UVR,TRM&json=json&indicadores=ok";
+	$url="http://190.27.201.2/autocontent/index.php?economy=DTF%2090%20D%C3%ADas,Euro,UVR&json=json&indicadores=ok";
 	$data=file_get_contents($url);
 	return $data;
 }
