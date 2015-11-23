@@ -52,7 +52,7 @@ function _indicadoresEconomicosPopupConfirmation(){
 		$submission = webform_get_submission($nid, $sid);
 		dpm($submission);
 		var_dump($submission);
-
+		echo 'Test';
 		$query = new EntityFieldQuery();
 		$entities = $query->entityCondition('entity_type', 'node')
 			->propertyCondition('type', 'logo_portafolio')
