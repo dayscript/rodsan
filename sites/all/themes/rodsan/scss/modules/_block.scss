@@ -1,5 +1,10 @@
 //Productos destacados home - Noticias destacadas home
-
+span.field-content {
+  font-size: 13px;
+    font-family: $font-sans;
+    font-style: italic;
+    color: #999;
+}
 .flex-viewport {
   .views-field-field-image {
     float: left;
