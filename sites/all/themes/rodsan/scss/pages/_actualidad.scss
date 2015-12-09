@@ -21,7 +21,7 @@
             }
           }
         }
-        .views-field-changed, .field-name-post-date{
+        .views-field-changed{
              font-size: 13px;
              font-family: $font-sans;
              font-style: italic;
@@ -41,6 +41,12 @@
       }
     }
   }
+    .field-name-post-date{
+             font-size: 13px;
+             font-family: $font-sans;
+             font-style: italic;
+             color: #999;
+        }
 }
 .node-type-article{
   .field-name-changed-date{
