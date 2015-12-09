@@ -33,16 +33,16 @@
     font-family: $font-sans;
     font-style: italic;
     color: #999;
-    span{
+  }
+  .flex-active{
+    background-color: $light-blue;
+  }
+      .fecha{
   font-size: 13px;
     font-family: $font-sans;
     font-style: italic;
     color: #999;
 }
-  }
-  .flex-active{
-    background-color: $light-blue;
-  }
 }
 
 //Bloque Nuestro portafolio home
