@@ -1,6 +1,10 @@
 <div class="indicadores-block">
-	<div class="indicadores-block-content">
-		<?php $data=json_decode($data);
+	<div class="indicadores-block-content" style="text-aling:left">
+	<!-- DolarWeb Basico Start -->
+	<div id="IndEcoBasico"><h2><a href="http://dolar.wilkinsonpc.com.co/">Dolar Hoy Colombia</a></h2></div><script type="text/javascript" src="http://dolar.wilkinsonpc.com.co/js/ind-eco-basico.js?ancho=170&alto=85&fondo=transparent&fsize=10&ffamily=sans-serif&fcolor=000000"></script><!-- DolarWeb Basico End -->
+		<?php  
+		//echo $data[0];
+		/*$data=json_decode($data);
 		dpm($data);
 
 		foreach ($data as $key => $value) :?>
@@ -27,7 +31,7 @@
 	     <?php print $value->country ?>-->
 
 
-		<?php endforeach;?>
+		<?php endforeach;*/?>
 
 
 		<div>
